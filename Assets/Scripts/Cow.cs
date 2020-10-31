@@ -2,12 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Cow : MonoBehaviour
 {
-    [SerializeField] float cowJumpPower = 1f;
-    [SerializeField] GameObject poopRocket;
+    [SerializeField] float cowJumpPower = 12f;
+    [SerializeField] GameObject poopShot;
     [SerializeField] float projectileSpeed = 10f;
+    [SerializeField] int poopShotLimit = 5;
+    [SerializeField] int poopShotEquippedAmount = 5;
+    [SerializeField] int poopShotAmountToLoad = 0;
+
 
     Rigidbody2D rigidbody2D;
     // Start is called before the first frame update
@@ -30,11 +35,13 @@ public class Cow : MonoBehaviour
 
     private void fire()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && poopShotEquippedAmount > 0)
         {
-            GameObject poop = Instantiate(poopRocket, transform.position, Quaternion.identity) as GameObject;
+            GameObject poop = Instantiate(poopShot, transform.position + new Vector3(1,0,0), Quaternion.identity) as GameObject;
             poop.GetComponent<Rigidbody2D>().velocity = new Vector2(projectileSpeed, 0);
 
+            poopShotEquippedAmount--;
         }
     }
+
 }
