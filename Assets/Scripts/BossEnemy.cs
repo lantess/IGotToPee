@@ -7,7 +7,7 @@ public class BossEnemy : iEnemy
 {
     public GameObject forkPrefab;
     public int hitpoint = 3;
-    public float shotDelay = 4.0f,
+    public float shotDelay = 3.0f,
         shootTimer = 0.0f,
         ySpeed = 3.0f,
         maxY = 2.9f,
@@ -29,7 +29,7 @@ public class BossEnemy : iEnemy
         Vector3 vec = transform.position;
         vec.y += ySpeed * direction * Time.deltaTime;
         this.transform.position = vec;
-        if (vec.y > maxY || vec.y < minY)
+        if (vec.y >= maxY || vec.y <= minY)
             direction = -direction;
         Shoot();
     }
@@ -47,7 +47,20 @@ public class BossEnemy : iEnemy
 
     private void ejectProjectile()
     {
-        Debug.Log("Eject");
+        Vector3 pos = transform.position;
+        pos.x -=2;
+        GameObject target = GameObject.Find("Cow");
+        GameObject missle = Instantiate(forkPrefab, pos, rotateTo(target)) as GameObject;
+        missle.GetComponent<Rigidbody2D>().velocity = target.transform.position;
+    }
+
+    private Quaternion rotateTo(GameObject target)
+    {
+        Vector3 vec = target.transform.position - transform.position;
+        float angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg;
+        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+        return q;
+
     }
 
     public new void OnCollisionEnter2D(Collision2D collision)
