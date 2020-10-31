@@ -15,10 +15,16 @@ public abstract class iEnemy : MonoBehaviour
     void Update()
     {
         Move();
+        LimitByCamera();
         Animate();
     }
 
     public abstract void Move();
+    public void LimitByCamera()
+    {
+        float height = GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize;
+        Debug.Log(height);
+    }
     public abstract void Animate();
 
     public void OnDestroy()
