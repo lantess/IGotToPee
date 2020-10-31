@@ -10,6 +10,7 @@ TagManager:
   - Dron
   - Drzewo
   - Mleko
+  - Enemy
   layers:
   - Default
   - TransparentFX
