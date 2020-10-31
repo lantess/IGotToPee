@@ -13,6 +13,8 @@ public class Cow : MonoBehaviour
     [SerializeField] int poopShotEquippedAmount = 5;
     [SerializeField] int milkAmount = 0;
 
+    public bool isSuperFat = false;
+
 
     Rigidbody2D rigidbody2D;
     // Start is called before the first frame update
@@ -31,6 +33,13 @@ public class Cow : MonoBehaviour
         }
 
         fire();
+
+        if (isSuperFat)
+        {
+
+        }
+
+        Debug.Log(isSuperFat);
     }
 
     private void fire()
