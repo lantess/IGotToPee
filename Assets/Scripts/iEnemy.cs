@@ -23,7 +23,13 @@ public abstract class iEnemy : MonoBehaviour
     public void LimitByCamera()
     {
         float height = GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize;
-        Debug.Log(height);
+        Vector3 pos = transform.position;
+        float max = height - transform.localScale.y / 2;
+        if (pos.y > max)
+            pos.y = max;
+        else if (pos.y < -max)
+            pos.y = -max;
+        transform.position = pos;
     }
     public abstract void Animate();
 
