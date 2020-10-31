@@ -14,23 +14,16 @@ public class BossEnemy : iEnemy
         minY = -2.9f;
     private float direction = 1.0f;
 
-    public override void Animate()
-    {
-
-    }
-
-    public override void AnimateDeath()
-    {
-
-    }
-
     public override void Move()
     {
         Vector3 vec = transform.position;
         vec.y += ySpeed * direction * Time.deltaTime;
+        if (vec.x > 5)
+            vec.x -= ySpeed * Time.deltaTime;
         this.transform.position = vec;
         if (vec.y >= maxY || vec.y <= minY)
             direction = -direction;
+        
         Shoot();
     }
 
@@ -76,5 +69,16 @@ public class BossEnemy : iEnemy
                 hitpoint--;
             Debug.Log("Boss hitpoints: " + hitpoint);
         }
+    }
+
+    public new void OnDestroy()
+    {
+        GameObject.Find("EnemyGenerator").GetComponent<EnemyGenerator>().isRunning = true;
+
+        base.OnDestroy();
+    }
+    public override Vector4 getSpawnArea()
+    {
+        return new Vector4(3f, -3f, 0.0f, 0.0f);
     }
 }

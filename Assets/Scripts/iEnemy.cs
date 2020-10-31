@@ -4,19 +4,13 @@ using UnityEngine;
 
 public abstract class iEnemy : MonoBehaviour
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public abstract Vector4 getSpawnArea();
 
     // Update is called once per frame
     void Update()
     {
         Move();
         LimitByCamera();
-        Animate();
     }
 
     public abstract void Move();
@@ -31,15 +25,11 @@ public abstract class iEnemy : MonoBehaviour
             pos.y = -max;
         transform.position = pos;
     }
-    public abstract void Animate();
 
     public void OnDestroy()
     {
-        AnimateDeath();
         Debug.Log("Destroy");
     }
-
-    public abstract void AnimateDeath();
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
