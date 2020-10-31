@@ -21,4 +21,10 @@ public class GolabEnemy : iEnemy
     {
 
     }
+
+    public new void OnCollisionEnter2D(Collision2D collision)
+    {
+        FindObjectOfType<GameStatus>().addToScorePerEnemy();
+        base.OnCollisionEnter2D(collision);
+    }
 }

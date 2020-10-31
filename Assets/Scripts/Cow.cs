@@ -11,7 +11,7 @@ public class Cow : MonoBehaviour
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] int poopShotLimit = 5;
     [SerializeField] int poopShotEquippedAmount = 5;
-    [SerializeField] int poopShotAmountToLoad = 0;
+    [SerializeField] int milkAmount = 0;
 
 
     Rigidbody2D rigidbody2D;
@@ -41,6 +41,32 @@ public class Cow : MonoBehaviour
             poop.GetComponent<Rigidbody2D>().velocity = new Vector2(projectileSpeed, 0);
 
             poopShotEquippedAmount--;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Mleko") 
+        {
+            Debug.Log(milkAmount + "ILOSC MLEKA");
+            milkAmount++;
+            shouldLoadPoopAmmunition();
+        }
+    }
+
+    private void shouldLoadPoopAmmunition()
+    {
+        if (milkAmount == 2)
+        {
+            if (poopShotEquippedAmount < poopShotLimit)
+            {
+                milkAmount = 0;
+                poopShotEquippedAmount++;
+            }
+            else
+            {
+                milkAmount = 2;
+            }
         }
     }
 
