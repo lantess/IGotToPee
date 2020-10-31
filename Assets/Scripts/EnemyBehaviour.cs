@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    private float _speed = 2.0f;
+    private float _xSpeed = 2.0f;
+    private float _ySpeed = 20.0f;
+    private int _yChangeSpeed = 10;
+    private float _sin = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +23,11 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Move()
     {
-        
-        
+        Vector3 pos = transform.position;
+        pos.x -= _xSpeed * Time.deltaTime;
+        pos.y += _ySpeed * Mathf.Sin(_sin) * Time.deltaTime;
+        _sin += Time.deltaTime*_yChangeSpeed;
+        transform.position = pos;
 
     }
 }
