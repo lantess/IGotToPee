@@ -21,4 +21,9 @@ public class BossEnemy : iEnemy
     {
 
     }
+    public new void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(hitpoint == 1)
+            base.OnCollisionEnter2D(collision);
+    }
 }

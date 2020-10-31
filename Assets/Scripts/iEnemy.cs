@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class iEnemy : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +29,10 @@ public abstract class iEnemy : MonoBehaviour
 
     public abstract void AnimateDeath();
 
-    public void OnCollisionEnter2D(Collision2D collision, string name)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Kolizja "+name);
-        if(collision.gameObject.name == "Circle")
+        Debug.Log("Kolizja "+gameObject.tag);
+        if(collision.gameObject.tag == "Poo")
             Destroy(gameObject);
     }
 }

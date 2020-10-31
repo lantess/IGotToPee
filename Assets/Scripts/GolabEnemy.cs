@@ -12,10 +12,6 @@ public class GolabEnemy : iEnemy
         pos.x -= _xSpeed * Time.deltaTime;
         transform.position = pos;
     }
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        base.OnCollisionEnter2D(collision, "golab");
-    }
     public override void Animate()
     {
 

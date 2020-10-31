@@ -16,10 +16,7 @@ public class DronEnemy : iEnemy
         _cos += Time.deltaTime * _yChangeSpeed;
         transform.position = pos;
     }
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        base.OnCollisionEnter2D(collision, "dron");
-    }
+
     public override void Animate()
     {
 
