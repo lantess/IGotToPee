@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class BossEnemy : iEnemy
 {
+    public GameObject forkPrefab;
     public int hitpoint = 3;
     public float shotDelay = 4.0f,
         shootTimer = 0.0f,
