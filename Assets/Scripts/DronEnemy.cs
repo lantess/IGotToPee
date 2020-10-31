@@ -18,8 +18,7 @@ public class DronEnemy : iEnemy
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Kolizja dron");
-        Destroy(gameObject);
+        base.OnCollisionEnter2D(collision, "dron");
     }
     public override void Animate()
     {

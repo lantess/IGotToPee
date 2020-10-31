@@ -27,4 +27,11 @@ public abstract class iEnemy : MonoBehaviour
     }
 
     public abstract void AnimateDeath();
+
+    public void OnCollisionEnter2D(Collision2D collision, string name)
+    {
+        Debug.Log("Kolizja "+name);
+        if(collision.gameObject.name == "Circle")
+            Destroy(gameObject);
+    }
 }
