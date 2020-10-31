@@ -10,12 +10,14 @@ public class EnemyGenerator : MonoBehaviour
     public float generatorTimeout = 4.0f,
                 maxEnemies = 1.0f,
                 multiplier = 1.1f,
-                difficultyTimeout = 15.0f;
+                difficultyTimeout = 15.0f,
+                bossOffset = 60.0f;
 
     public bool isRunning = true;
 
     private float generatorDelta = 4.0f,
-                    difficultyDelta = 0.0f;
+                    difficultyDelta = 0.0f,
+                    bossDelta = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,11 @@ public class EnemyGenerator : MonoBehaviour
     void Update()
     {
         if (isRunning) {
+            if (bossDelta >= bossOffset)
+                generateBoss();
+            else
+                bossDelta += Time.deltaTime;
+
             if (generatorDelta >= generatorTimeout)
                 generateEnemy();
             else
@@ -38,6 +45,11 @@ public class EnemyGenerator : MonoBehaviour
                 generatorTimeout /= multiplier;
             }
         }
+    }
+
+    private void generateBoss()
+    {
+        throw new NotImplementedException();
     }
 
     private void generateEnemy()
