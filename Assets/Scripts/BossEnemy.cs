@@ -53,10 +53,13 @@ public class BossEnemy : iEnemy
     public new void OnCollisionEnter2D(Collision2D collision)
     {
         if (hitpoint == 1)
+        {
             base.OnCollisionEnter2D(collision);
+            FindObjectOfType<GameStatus>().addToScorePerBoss();
+        }
         else
         {
-            if(collision.gameObject.tag == "Poo")
+            if (collision.gameObject.tag == "Poo")
                 hitpoint--;
             Debug.Log("Boss hitpoints: " + hitpoint);
         }
