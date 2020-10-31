@@ -20,8 +20,9 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Move()
     {
-        
-        
+        Vector3 pos = transform.position;
+        pos.x -= _speed * Time.deltaTime;
+        transform.position = pos;
 
     }
 }
