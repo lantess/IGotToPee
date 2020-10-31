@@ -12,19 +12,15 @@ public class GolabEnemy : iEnemy
         pos.x -= _xSpeed * Time.deltaTime;
         transform.position = pos;
     }
-    public override void Animate()
-    {
-
-    }
-
-    public override void AnimateDeath()
-    {
-
-    }
 
     public new void OnCollisionEnter2D(Collision2D collision)
     {
         FindObjectOfType<GameStatus>().addToScorePerEnemy();
         base.OnCollisionEnter2D(collision);
+    }
+
+    public override Vector4 getSpawnArea()
+    {
+        return new Vector4(4.5f, -4.5f, 0.0f, 0.0f);
     }
 }
