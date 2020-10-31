@@ -8,6 +8,7 @@ public class GameStatus : MonoBehaviour
     [SerializeField] int scorePerEnemyDestroyed = 30;
     [SerializeField] int scorePerBossDestroyed = 100;
     [SerializeField] int scorePerMilkGathered = 15;
+    [SerializeField] int scorePerStarGathered = 55;
     [SerializeField] TextMeshProUGUI scoreText;
 
 
@@ -42,6 +43,12 @@ public class GameStatus : MonoBehaviour
     public void addToScoreMilk()
     {
         currentScore += scorePerMilkGathered;
+        scoreText.text = currentScore.ToString();
+    }
+
+    public void addToScorePerStar()
+    {
+        currentScore += scorePerStarGathered;
         scoreText.text = currentScore.ToString();
     }
 }
