@@ -71,12 +71,12 @@ public class Cow : MonoBehaviour
                 spriteRenderer.sprite = spriteArray[1];
                 rend.material.SetColor("_Color", HSBColor.ToColor(new HSBColor(Mathf.PingPong(Time.time * Speed, 1), 1, 1)));
 
-
             }
             else
             {
                 isSuperFat = false;
                 spriteRenderer.sprite = spriteArray[0];
+                rend.material.SetColor("_Color", Color.white);
 
             }
         }
