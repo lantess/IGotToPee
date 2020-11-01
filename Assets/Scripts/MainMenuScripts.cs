@@ -5,18 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScripts : MonoBehaviour
 {
-    public void NewGame()
-    {
-        SceneManager.LoadScene("AdamTestScene");
-    }
-
     public void Credits()
     {
-        Debug.Log("KUPA");
+        SceneManager.LoadScene("Credits");
     }
 
     public void Controls()
     {
-        Debug.Log("KUPA");
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenuScene");
     }
 }
