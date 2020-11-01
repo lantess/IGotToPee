@@ -16,16 +16,17 @@ public class GameStatus : MonoBehaviour
     [SerializeField] int currentScore = 0;
 
 
+
     private void Start()
     {
         scoreText.text = currentScore.ToString();
     }
 
 
+
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void addToScorePerEnemy()
