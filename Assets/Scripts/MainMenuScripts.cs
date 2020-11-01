@@ -19,9 +19,4 @@ public class MainMenuScripts : MonoBehaviour
     {
         Debug.Log("KUPA");
     }
-
-    public void LoadMainMenuScene()
-    {
-        SceneManager.LoadScene("MainMenuScene");
-    }
 }
