@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class iEnemy : MonoBehaviour
 {
     public abstract Vector4 getSpawnArea();
+    [SerializeField] GameObject deathVFX;
 
     // Update is called once per frame
     void Update()
@@ -32,7 +33,15 @@ public abstract class iEnemy : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Poo")
-            Destroy(gameObject);
+        Debug.Log("Kolizja "+gameObject.tag);
+        if (collision.gameObject.tag == "Poo")
+            Die();
+    }
+
+    public void Die()
+    {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+        Destroy(explosion, 1f);
     }
 }
