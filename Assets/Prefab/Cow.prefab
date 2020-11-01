@@ -102,13 +102,14 @@ MonoBehaviour:
   cowJumpPower: 12
   poopShot: {fileID: 221036383992851752, guid: d11c6087ce3863149a6c4ce9b57e74b7, type: 3}
   projectileSpeed: 10
-  poopShotLimit: 100
-  poopShotEquippedAmount: 100
+  poopShotLimit: 10
+  poopShotEquippedAmount: 10
   milkAmount: 0
   deathVFX: {fileID: 6348770088035908620, guid: 03fe55e4b3d59c448a117e633895cb16,
     type: 3}
+  pooCounter: {fileID: 0}
   isSuperFat: 0
-  spriteArray: []
+  hasInfinitePoop: 0
   spriteRenderer: {fileID: 0}
   Speed: 1
   animator: {fileID: 0}
