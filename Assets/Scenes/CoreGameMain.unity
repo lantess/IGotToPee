@@ -280,6 +280,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 666686498781067919, guid: 618c69c4e4d03d44f9a74b4fef9c3d97,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -102.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 666686498781067919, guid: 618c69c4e4d03d44f9a74b4fef9c3d97,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -46
+      objectReference: {fileID: 0}
+    - target: {fileID: 666686498781067919, guid: 618c69c4e4d03d44f9a74b4fef9c3d97,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 132.68066
+      objectReference: {fileID: 0}
     - target: {fileID: 2706422218571627055, guid: 618c69c4e4d03d44f9a74b4fef9c3d97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -389,6 +404,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5949096968498731120, guid: 618c69c4e4d03d44f9a74b4fef9c3d97,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f1ea90829972cff4986f28a27ea02b59,
+        type: 2}
+    - target: {fileID: 5949096968498731120, guid: 618c69c4e4d03d44f9a74b4fef9c3d97,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 21353321127242626, guid: f1ea90829972cff4986f28a27ea02b59,
+        type: 2}
+    - target: {fileID: 5949096968498731120, guid: 618c69c4e4d03d44f9a74b4fef9c3d97,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -1.3234253
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618c69c4e4d03d44f9a74b4fef9c3d97, type: 3}
