@@ -13,12 +13,16 @@ public class Cow : MonoBehaviour
     [SerializeField] int poopShotEquippedAmount = 5;
     [SerializeField] int milkAmount = 0;
 
-    float lastTime = 0f;
+    [SerializeField] GameObject deathVFX;
 
+    float lastTime = 0f;
     public bool isSuperFat = false;
+
     public Sprite[] spriteArray;
     public SpriteRenderer spriteRenderer;
 
+    public float Speed = 1;
+    private Renderer rend;
 
     Rigidbody2D rigidbody2D;
     // Start is called before the first frame update
@@ -26,6 +30,8 @@ public class Cow : MonoBehaviour
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        rend = GetComponent<Renderer>();
+
     }
 
     // Update is called once per frame
@@ -40,7 +46,6 @@ public class Cow : MonoBehaviour
         fire();
         makeSuperCow();
 
-
         Debug.Log(isSuperFat);
     }
 
@@ -52,6 +57,8 @@ public class Cow : MonoBehaviour
             {
                 lastTime += Time.deltaTime;
                 spriteRenderer.sprite = spriteArray[1];
+                rend.material.SetColor("_Color", HSBColor.ToColor(new HSBColor(Mathf.PingPong(Time.time * Speed, 1), 1, 1)));
+
 
             }
             else
@@ -81,6 +88,16 @@ public class Cow : MonoBehaviour
             Debug.Log(milkAmount + "ILOSC MLEKA");
             milkAmount++;
             shouldLoadPoopAmmunition();
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!isSuperFat)
+        {
+            Destroy(gameObject);
+            GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+            Destroy(explosion, 1f);
         }
     }
 

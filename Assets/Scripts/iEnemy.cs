@@ -34,7 +34,7 @@ public abstract class iEnemy : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Kolizja "+gameObject.tag);
-        if (collision.gameObject.tag == "Poo")
+        if (collision.gameObject.tag == "Poo" || (collision.gameObject.GetComponent<Cow>().isSuperFat))
             Die();
     }
 
