@@ -58,7 +58,6 @@ public class Cow : MonoBehaviour
                 lastTime += Time.deltaTime;
                 spriteRenderer.sprite = spriteArray[1];
                 rend.material.SetColor("_Color", HSBColor.ToColor(new HSBColor(Mathf.PingPong(Time.time * Speed, 1), 1, 1)));
-
             }
             else
             {
@@ -115,6 +114,12 @@ public class Cow : MonoBehaviour
                 milkAmount = 2;
             }
         }
+    }
+
+
+    public bool getIsSuperFat()
+    {
+        return isSuperFat;
     }
 
 }

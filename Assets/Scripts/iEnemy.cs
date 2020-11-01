@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,13 +7,17 @@ public abstract class iEnemy : MonoBehaviour
 {
     public abstract Vector4 getSpawnArea();
     [SerializeField] GameObject deathVFX;
+    [SerializeField] public Cow cow;
+
+    public float Speed = 1;
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         Move();
         LimitByCamera();
     }
+
 
     public abstract void Move();
     public void LimitByCamera()

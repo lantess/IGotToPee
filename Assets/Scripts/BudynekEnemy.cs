@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class BudynekEnemy : iEnemy
 {
@@ -18,4 +19,5 @@ public class BudynekEnemy : iEnemy
     {
         return new Vector4(-3.5f, -3.5f, 0.0f, 0.0f);
     }
+
 }
