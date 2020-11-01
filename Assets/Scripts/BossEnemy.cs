@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossEnemy : iEnemy
 {
@@ -13,6 +14,8 @@ public class BossEnemy : iEnemy
         maxY = 2.9f,
         minY = -2.9f;
     private float direction = 1.0f;
+    //[SerializeField] GameObject deathVFX;
+
 
     public override void Move()
     {
@@ -61,7 +64,10 @@ public class BossEnemy : iEnemy
         if (hitpoint == 1)
         {
             base.OnCollisionEnter2D(collision);
-            FindObjectOfType<GameStatus>().addToScorePerBoss();
+/*            FindObjectOfType<GameStatus>().addToScorePerBoss();
+            Destroy(gameObject);
+            GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+            Destroy(explosion, 1f);*/
         }
         else
         {
