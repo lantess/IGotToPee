@@ -28,12 +28,10 @@ public abstract class iEnemy : MonoBehaviour
 
     public void OnDestroy()
     {
-        Debug.Log("Destroy");
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Kolizja "+gameObject.tag);
         if(collision.gameObject.tag == "Poo")
             Destroy(gameObject);
     }

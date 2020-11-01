@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GarbageCollector : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public string[] tagsToCollect;
     void Start()
     {
         
@@ -14,5 +14,14 @@ public class GarbageCollector : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        for(int i = 0; i < tagsToCollect.Length; i++)
+        {
+            if (collision.gameObject.tag == tagsToCollect[i])
+                Destroy(collision.gameObject);
+        }
     }
 }

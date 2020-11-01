@@ -18,7 +18,6 @@ public class Milk : MonoBehaviour
         Debug.Log(collision);
         if (collision.gameObject.tag == "Cow")
         {
-            Debug.Log("Kolizja mleko");
             FindObjectOfType<GameStatus>().addToScoreMilk();
             Destroy(gameObject);
         }

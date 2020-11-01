@@ -55,7 +55,6 @@ public class EnemyGenerator : MonoBehaviour
             int no = (int)UnityEngine.Random.Range(0, enemies.Length);
             Vector3 tran = transform.position;
             Vector4 range = enemies[no].GetComponent<iEnemy>().getSpawnArea();
-            Debug.Log(range.x + " " + range.y);
             tran.y += UnityEngine.Random.Range(range.x, range.y);
             Instantiate(enemies[no], tran, transform.rotation);
         }
