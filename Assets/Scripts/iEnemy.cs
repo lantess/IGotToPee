@@ -29,7 +29,6 @@ public abstract class iEnemy : MonoBehaviour
 
     public void OnDestroy()
     {
-        Debug.Log("Destroy");
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -44,6 +43,5 @@ public abstract class iEnemy : MonoBehaviour
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, 1f);
-
     }
 }

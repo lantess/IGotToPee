@@ -86,7 +86,7 @@ public class Cow : MonoBehaviour
 
     private void shouldLoadPoopAmmunition()
     {
-        if (milkAmount == 2)
+        if (milkAmount >= 2)
         {
             if (poopShotEquippedAmount < poopShotLimit)
             {
