@@ -101,7 +101,12 @@ MonoBehaviour:
   projectileSpeed: 10
   poopShotLimit: 5
   poopShotEquippedAmount: 5
-  poopShotAmountToLoad: 0
+  milkAmount: 0
+  deathVFX: {fileID: 6348770088035908620, guid: 03fe55e4b3d59c448a117e633895cb16,
+    type: 3}
+  isSuperFat: 0
+  spriteArray: []
+  spriteRenderer: {fileID: 0}
 --- !u!50 &995404571242948129
 Rigidbody2D:
   serializedVersion: 4
