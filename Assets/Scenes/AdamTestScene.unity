@@ -204,46 +204,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &583707102 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 995404571242948133, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
+--- !u!95 &583707103 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7535902294068038721, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
     type: 3}
   m_PrefabInstance: {fileID: 1273355172}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &583707103
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583707102}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cb4882c1edcf5c5468cdf41cc158b4d0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &583707104
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583707102}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 48830b717a0046e4198679af8a908450, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &822812367
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,16 +328,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
-        type: 3}
-      propertyPath: poopShotLimit
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
-        type: 3}
-      propertyPath: poopShotEquippedAmount
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
         type: 3}
