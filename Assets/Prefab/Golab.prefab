@@ -148,7 +148,7 @@ MonoBehaviour:
     type: 3}
   cow: {fileID: 0}
   Speed: 1
-  _xSpeed: 3
+  _xSpeed: 4
 --- !u!95 &7388337153466760680
 Animator:
   serializedVersion: 3

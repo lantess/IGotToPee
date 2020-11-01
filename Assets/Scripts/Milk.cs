@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Milk : MonoBehaviour
 {
-    public float _xSpeed = 2.0f;
+    public float _xSpeed = 3.0f;
 
 
     // Update is called once per frame

@@ -5,12 +5,13 @@ using UnityEngine;
 public class BackgroundManager : MonoBehaviour
 {
     public GameObject bgPrefab;
+    public float yOffset = 0.0f;
     public float velocity = 1.5f;
 
     private List<GameObject> bgs = new List<GameObject>();
     void Start()
     {
-        bgs.Add(Instantiate(bgPrefab, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity));
+        bgs.Add(Instantiate(bgPrefab, new Vector3(0.0f, yOffset, 0.0f), Quaternion.identity));
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class BackgroundManager : MonoBehaviour
             bg.transform.position = pos;
         }
         if (bgs[0].transform.position.x < 0.0f && bgs.Count < 2)
-            bgs.Add(Instantiate(bgPrefab, new Vector3(22.5f, 0.0f, 0.0f), Quaternion.identity));
+            bgs.Add(Instantiate(bgPrefab, new Vector3(22.5f, yOffset, 0.0f), Quaternion.identity));
         else if (bgs[0].transform.position.x < -22.50f)
         {
             GameObject bg = bgs[0];

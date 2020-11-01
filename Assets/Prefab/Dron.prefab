@@ -148,7 +148,7 @@ MonoBehaviour:
     type: 3}
   cow: {fileID: 0}
   Speed: 1
-  _xSpeed: 3
+  _xSpeed: 4
   _ySpeed: 1
   _yChangeSpeed: 1.5
   _cos: 0

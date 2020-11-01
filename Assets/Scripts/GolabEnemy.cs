@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GolabEnemy : iEnemy
 {
-    public float _xSpeed = 3.0f;
+    public float _xSpeed = 4.0f;
 
     public override void Move()
     {
@@ -21,6 +21,6 @@ public class GolabEnemy : iEnemy
 
     public override Vector4 getSpawnArea()
     {
-        return new Vector4(4.5f, -4.5f, 0.0f, 0.0f);
+        return new Vector4(4.5f, -3.5f, 0.0f, 0.0f);
     }
 }

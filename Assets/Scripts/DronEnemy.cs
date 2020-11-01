@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DronEnemy : iEnemy
 {
-    public float _xSpeed = 3.0f;
+    public float _xSpeed = 4.0f;
     public float _ySpeed = 1.0f;
     public float _yChangeSpeed = 1.5f;
     public float _cos = 0.0f;
@@ -26,7 +26,7 @@ public class DronEnemy : iEnemy
 
     public override Vector4 getSpawnArea()
     {
-        return new Vector4(3.5f, -3.5f, 0.0f, 0.0f);
+        return new Vector4(3.5f, -2.5f, 0.0f, 0.0f);
     }
 
 }

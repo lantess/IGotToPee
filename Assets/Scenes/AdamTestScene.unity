@@ -838,6 +838,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7660600546124177358, guid: 51340128a4892ae42826db6153025428,
         type: 3}
+    - target: {fileID: 1002555411423779572, guid: 866b0b2f651cc3a4da407602e9c7d297,
+        type: 3}
+      propertyPath: flrPrefab
+      value: 
+      objectReference: {fileID: 204817530746685819, guid: e21c11b4dde430649a35bcc261847987,
+        type: 3}
+    - target: {fileID: 1002555411423779572, guid: 866b0b2f651cc3a4da407602e9c7d297,
+        type: 3}
+      propertyPath: velocity
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1002555411423779573, guid: 866b0b2f651cc3a4da407602e9c7d297,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -897,6 +908,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BackgroundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885766415995188902, guid: 866b0b2f651cc3a4da407602e9c7d297,
+        type: 3}
+      propertyPath: bgPrefab
+      value: 
+      objectReference: {fileID: 204817530746685819, guid: e21c11b4dde430649a35bcc261847987,
+        type: 3}
+    - target: {fileID: 1885766415995188902, guid: 866b0b2f651cc3a4da407602e9c7d297,
+        type: 3}
+      propertyPath: yOffset
+      value: -4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885766415995188902, guid: 866b0b2f651cc3a4da407602e9c7d297,
+        type: 3}
+      propertyPath: velocity
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866b0b2f651cc3a4da407602e9c7d297, type: 3}

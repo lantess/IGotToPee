@@ -29,7 +29,7 @@ public class BudynekEnemy : iEnemy
 
     public override Vector4 getSpawnArea()
     {
-        return new Vector4(-2.5f, -2.5f, 0.0f, 0.0f);
+        return new Vector4(-1.75f, -1.75f, 0.0f, 0.0f);
     }
 
     public new void OnCollisionEnter2D(Collision2D collision)
