@@ -151,7 +151,6 @@ public class Cow : MonoBehaviour
             Destroy(gameObject);
             GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
             Destroy(explosion, 1f);
-            Time.timeScale = 0.1f;
             SceneManager.LoadScene("GameOverScene");
         }
 
