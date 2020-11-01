@@ -18,8 +18,6 @@ public class Cow : MonoBehaviour
     [SerializeField] GameObject deathVFX;
 
     public TMPro.TMP_Text pooCounter;
-    [SerializeField] public Image barEmpty,
-                barFull;
 
     float lastTime = 0f;
     public bool isSuperFat = false;
@@ -42,6 +40,7 @@ public class Cow : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         rend = GetComponent<Renderer>();
         Time.timeScale = 1.0f;
+        pooCounter.text = ""+poopShotEquippedAmount;
     }
     public void LimitByCamera()
     {
@@ -132,15 +131,16 @@ public class Cow : MonoBehaviour
             animator.SetBool("isPooping", false);
             
         }
+        pooCounter.text = "" + poopShotEquippedAmount;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Mleko") 
         {
-            Debug.Log(milkAmount + "ILOSC MLEKA");
             milkAmount++;
             shouldLoadPoopAmmunition();
+
         }
         if (collision.gameObject.tag == "Floor")
         {
@@ -175,6 +175,7 @@ public class Cow : MonoBehaviour
                 milkAmount = 2;
             }
         }
+        pooCounter.text = ""+poopShotEquippedAmount;
     }
 
 
