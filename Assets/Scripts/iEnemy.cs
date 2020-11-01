@@ -6,7 +6,7 @@ using UnityEngine;
 public abstract class iEnemy : MonoBehaviour
 {
     public abstract Vector4 getSpawnArea();
-    [SerializeField] GameObject deathVFX;
+    [SerializeField] public GameObject deathVFX;
     [SerializeField] public Cow cow;
 
     public float Speed = 1;
