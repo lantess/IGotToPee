@@ -495,6 +495,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff3801e327c580468868e31eb9339cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 5414505865369426063, guid: a8747594f81340e43840d608addd3fec, type: 3}
+  - {fileID: 4950401994867752742, guid: f7e2cb2a964c1084b8d42867f035471e, type: 3}
+  spawnTimeout: 20
 --- !u!4 &1619754507
 Transform:
   m_ObjectHideFlags: 0

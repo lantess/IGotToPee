@@ -100,7 +100,6 @@ MonoBehaviour:
   _ySpeed: 1
   _yChangeSpeed: 1
   _cos: 0
-  cow: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119, type: 3}
 --- !u!50 &4950401994867752749
 Rigidbody2D:
   serializedVersion: 4
