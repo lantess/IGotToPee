@@ -472,7 +472,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618c69c4e4d03d44f9a74b4fef9c3d97, type: 3}
---- !u!1 &1707074977
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -501,8 +500,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115169b29bdbd0540b89d5eeb3138dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delta: 0.01
+  update: 1.5
   multPerMinute: 1.001
---- !u!4 &1707074979
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -516,7 +516,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1958674576
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
