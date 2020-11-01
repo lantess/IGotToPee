@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7338569986581199457}
   - component: {fileID: -5448145879237042331}
   - component: {fileID: -2851038101896802861}
+  - component: {fileID: 2275084643804940336}
   m_Layer: 0
   m_Name: PoopShot
   m_TagString: Poo
@@ -133,3 +134,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e092467626eb7439ed01a1e7aa89f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2275084643804940336
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221036383992851752}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5c911e2d652ee2e409672d21c74711f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

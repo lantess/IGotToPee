@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6704251275337410550}
   - component: {fileID: 7084804139093001440}
   - component: {fileID: -7274608895102607770}
+  - component: {fileID: 5751167093467524155}
   m_Layer: 0
   m_Name: Milk
   m_TagString: Mleko
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7895788475931131827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.192, y: -1.601, z: 0}
-  m_LocalScale: {x: 0.50391555, y: 1.4579239, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: de42d9cd4acc7c040a07826754541395, type: 3}
-  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e2958f565c08eea40ac8313458edf28b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -109,6 +110,25 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.40460584, y: 0.01647619}
-  m_Size: {x: 0.39795962, y: 1.0368208}
+  m_Offset: {x: -0.024261951, y: 0.016476214}
+  m_Size: {x: 0.57370377, y: 1.0368208}
   m_Direction: 0
+--- !u!95 &5751167093467524155
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7895788475931131827}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4362682525660013651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.98, y: -2.98, z: 0}
-  m_LocalScale: {x: 2, y: 4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6226a28947ec850469b324987624c696, type: 3}
-  m_Color: {r: 0.23168159, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 13f8bb7418d72cf48917a2cf5088d595, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.125, y: 5.0625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -143,4 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e4d5e632d2e3f44b3ee8998b7176c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathVFX: {fileID: 0}
+  cow: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119, type: 3}
+  Speed: 1
   _xSpeed: 0.75
+  sprites:
+  - {fileID: 21300000, guid: d5c43b7fc3d4bff45852256c8a9d2c6c, type: 3}
+  - {fileID: 21300000, guid: 4870cd5b18907cd4ea4f241de8e90e84, type: 3}
+  - {fileID: 21300000, guid: 13f8bb7418d72cf48917a2cf5088d595, type: 3}

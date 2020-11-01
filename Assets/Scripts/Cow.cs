@@ -17,14 +17,20 @@ public class Cow : MonoBehaviour
 
     [SerializeField] GameObject deathVFX;
 
+    public TMPro.TMP_Text pooCounter;
+
     float lastTime = 0f;
     public bool isSuperFat = false;
 
-    public Sprite[] spriteArray;
+    float lastTimeInfinitePoop = 0f;
+    public bool hasInfinitePoop = false;
+
     public SpriteRenderer spriteRenderer;
 
     public float Speed = 1;
     private Renderer rend;
+
+    public Animator animator;
 
     Rigidbody2D rigidbody2D;
     // Start is called before the first frame update
@@ -34,6 +40,7 @@ public class Cow : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         rend = GetComponent<Renderer>();
         Time.timeScale = 1.0f;
+        pooCounter.text = ""+poopShotEquippedAmount;
     }
     public void LimitByCamera()
     {
@@ -54,30 +61,54 @@ public class Cow : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             rigidbody2D.velocity = new Vector2(0, cowJumpPower);
+            animator.SetBool("isJumping", true);
+            animator.SetBool("hasLanded", false);
         }
 
         fire();
         makeSuperCow();
+        makeInfinitePoop();
         LimitByCamera();
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            animator.SetBool("isJumping", false);
+        }
     }
 
     private void makeSuperCow()
     {
         if (isSuperFat)
         {
+            animator.SetBool("isFat", true);
+
             if (lastTime <= 5)
             {
                 lastTime += Time.deltaTime;
-                spriteRenderer.sprite = spriteArray[1];
                 rend.material.SetColor("_Color", HSBColor.ToColor(new HSBColor(Mathf.PingPong(Time.time * Speed, 1), 1, 1)));
-
             }
             else
             {
                 isSuperFat = false;
-                spriteRenderer.sprite = spriteArray[0];
+                animator.SetBool("isFat", false);
                 rend.material.SetColor("_Color", Color.white);
+                lastTime = 0.0f;
+            }
+        }
+    }
 
+    private void makeInfinitePoop()
+    {
+        if (hasInfinitePoop)
+        {
+            if (lastTimeInfinitePoop <= 5)
+            {
+                lastTimeInfinitePoop += Time.deltaTime;
+                poopShotEquippedAmount = poopShotLimit;
+            }
+            else
+            {
+                hasInfinitePoop = false;
             }
         }
     }
@@ -86,20 +117,34 @@ public class Cow : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && poopShotEquippedAmount > 0 && !isSuperFat)
         {
+            animator.SetBool("isPooping",true);
+            
+
             GameObject poop = Instantiate(poopShot, transform.position + new Vector3(1,0,0), Quaternion.identity) as GameObject;
             poop.GetComponent<Rigidbody2D>().velocity = new Vector2(projectileSpeed, 0);
 
             poopShotEquippedAmount--;
         }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            animator.SetBool("isPooping", false);
+            
+        }
+        pooCounter.text = "" + poopShotEquippedAmount;
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Mleko") 
         {
-            Debug.Log(milkAmount + "ILOSC MLEKA");
             milkAmount++;
             shouldLoadPoopAmmunition();
+
+        }
+        if (collision.gameObject.tag == "Floor")
+        {
+            animator.SetBool("hasLanded", true);
         }
     }
 
@@ -110,9 +155,10 @@ public class Cow : MonoBehaviour
             Destroy(gameObject);
             GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
             Destroy(explosion, 1f);
-            Time.timeScale = 0.1f;
             SceneManager.LoadScene("GameOverScene");
         }
+
+        
     }
 
     private void shouldLoadPoopAmmunition()
@@ -129,6 +175,13 @@ public class Cow : MonoBehaviour
                 milkAmount = 2;
             }
         }
+        pooCounter.text = ""+poopShotEquippedAmount;
+    }
+
+
+    public bool getIsSuperFat()
+    {
+        return isSuperFat;
     }
 
 }

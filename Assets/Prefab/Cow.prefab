@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 995404571242948132}
   - component: {fileID: 995404571242948129}
   - component: {fileID: 995404571242948128}
+  - component: {fileID: 2858011219380419935}
+  - component: {fileID: 7535902294068038721}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Cow
@@ -73,8 +75,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6226a28947ec850469b324987624c696, type: 3}
-  m_Color: {r: 0.8018868, g: 0.47281063, b: 0.7163782, a: 1}
+  m_Sprite: {fileID: 8361623316130514896, guid: a4f47ee1d66e9ac43ab2e92a368fac84,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,14 +102,16 @@ MonoBehaviour:
   cowJumpPower: 12
   poopShot: {fileID: 221036383992851752, guid: d11c6087ce3863149a6c4ce9b57e74b7, type: 3}
   projectileSpeed: 10
-  poopShotLimit: 5
-  poopShotEquippedAmount: 5
+  poopShotLimit: 100
+  poopShotEquippedAmount: 100
   milkAmount: 0
   deathVFX: {fileID: 6348770088035908620, guid: 03fe55e4b3d59c448a117e633895cb16,
     type: 3}
   isSuperFat: 0
   spriteArray: []
   spriteRenderer: {fileID: 0}
+  Speed: 1
+  animator: {fileID: 0}
 --- !u!50 &995404571242948129
 Rigidbody2D:
   serializedVersion: 4
@@ -145,7 +150,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -154,3 +159,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!111 &2858011219380419935
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995404571242948133}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 48830b717a0046e4198679af8a908450, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &7535902294068038721
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995404571242948133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb4882c1edcf5c5468cdf41cc158b4d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
