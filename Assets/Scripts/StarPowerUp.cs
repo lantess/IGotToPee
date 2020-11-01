@@ -29,16 +29,9 @@ public class StarPowerUp : MonoBehaviour
         if (collision.gameObject.tag == "Cow")
         {
             collision.gameObject.GetComponent<Cow>().isSuperFat = true;
-            Invoke("setSuperFatBack", 5f);
             FindObjectOfType<GameStatus>().addToScorePerStar();
             Destroy(gameObject);
         }
-
-    }
-
-    private void setSuperFatBack()
-    {
-        GetComponent<Cow>().isSuperFat = false;
 
     }
 
