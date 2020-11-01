@@ -30,7 +30,7 @@ public class InfinitePoop : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cow")
         {
-            collision.gameObject.GetComponent<Cow>().isSuperFat = true;
+            collision.gameObject.GetComponent<Cow>().hasInfinitePoop = true;
             FindObjectOfType<GameStatus>().addToScorePerPoop();
             Destroy(gameObject);
         }

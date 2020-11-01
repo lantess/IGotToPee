@@ -20,6 +20,9 @@ public class Cow : MonoBehaviour
     float lastTime = 0f;
     public bool isSuperFat = false;
 
+    float lastTimeInfinitePoop = 0f;
+    public bool hasInfinitePoop = false;
+
     public Sprite[] spriteArray;
     public SpriteRenderer spriteRenderer;
 
@@ -37,14 +40,14 @@ public class Cow : MonoBehaviour
     }
     public void LimitByCamera()
     {
-        float height = GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize;
+/*        float height = GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize;
         Vector3 pos = transform.position;
         float max = height - transform.localScale.y / 2;
         if (pos.y > max)
             pos.y = max;
         else if (pos.y < -max+1)
             pos.y = -max+1;
-        transform.position = pos;
+        transform.position = pos;*/
     }
 
     // Update is called once per frame
@@ -58,6 +61,7 @@ public class Cow : MonoBehaviour
 
         fire();
         makeSuperCow();
+        makeInfinitePoop();
         LimitByCamera();
     }
 
@@ -77,6 +81,22 @@ public class Cow : MonoBehaviour
                 spriteRenderer.sprite = spriteArray[0];
                 rend.material.SetColor("_Color", Color.white);
 
+            }
+        }
+    }
+
+    private void makeInfinitePoop()
+    {
+        if (hasInfinitePoop)
+        {
+            if (lastTimeInfinitePoop <= 5)
+            {
+                lastTimeInfinitePoop += Time.deltaTime;
+                poopShotEquippedAmount = poopShotLimit;
+            }
+            else
+            {
+                hasInfinitePoop = false;
             }
         }
     }
