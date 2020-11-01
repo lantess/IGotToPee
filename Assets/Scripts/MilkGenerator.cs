@@ -13,10 +13,11 @@ public class MilkGenerator : MonoBehaviour
                     currTimeOffset,
                 currMilkdelta = 0.0f;
     private int milkCount = 0;
-    private Vector3 pos = new Vector3(0.0f, 0.0f, 0.0f);
+    private Vector3 pos;
     // Start is called before the first frame update
     void Start()
     {
+        pos = gameObject.transform.position;
         currTimeOffset = UnityEngine.Random.Range(0.0f, maxTimeOffset);
     }
 
@@ -41,7 +42,7 @@ public class MilkGenerator : MonoBehaviour
                 currMilkdelta = 0.0f;
                 milkCount--;
                 Instantiate(milkPrefab, pos, Quaternion.identity);
-                pos.y += UnityEngine.Random.Range(-1, 1);
+                pos.y += UnityEngine.Random.Range(-1, 2);
                 if (pos.y > 4.0f)
                     pos.y = 4.0f;
                 else if (pos.y < -4.0f)

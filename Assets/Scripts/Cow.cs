@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class Cow : MonoBehaviour
@@ -31,7 +33,18 @@ public class Cow : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         rend = GetComponent<Renderer>();
-
+        Time.timeScale = 1.0f;
+    }
+    public void LimitByCamera()
+    {
+        float height = GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize;
+        Vector3 pos = transform.position;
+        float max = height - transform.localScale.y / 2;
+        if (pos.y > max)
+            pos.y = max;
+        else if (pos.y < -max+1)
+            pos.y = -max+1;
+        transform.position = pos;
     }
 
     // Update is called once per frame
@@ -45,8 +58,7 @@ public class Cow : MonoBehaviour
 
         fire();
         makeSuperCow();
-
-        Debug.Log(isSuperFat);
+        LimitByCamera();
     }
 
     private void makeSuperCow()
@@ -98,6 +110,8 @@ public class Cow : MonoBehaviour
             Destroy(gameObject);
             GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
             Destroy(explosion, 1f);
+            Time.timeScale = 0.1f;
+            SceneManager.LoadScene("GameOverScene");
         }
     }
 
