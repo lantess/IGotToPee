@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: 330f05ca5b9002443b80e32d29a349f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3332859302782558285
+    second: MegaCow_0
+  - first:
+      213: 4225768444374181688
+    second: MegaCow_1
+  - first:
+      213: 7370580240444532148
+    second: MegaCow_2
+  - first:
+      213: -6781810237256527500
+    second: MegaCow_3
+  - first:
+      213: 1674750152138136365
+    second: MegaCow_4
+  - first:
+      213: 8940653536160635708
+    second: MegaCow_5
+  - first:
+      213: 2552396982965976612
+    second: MegaCow_6
+  - first:
+      213: -553689276704207802
+    second: MegaCow_7
+  - first:
+      213: 755885548484112802
+    second: MegaCow_8
+  - first:
+      213: 9130145135682110951
+    second: MegaCow_9
+  - first:
+      213: -9192890881385571953
+    second: MegaCow_10
+  - first:
+      213: 7836412982200538426
+    second: MegaCow_11
+  - first:
+      213: -3925122106816090967
+    second: MegaCow_12
+  - first:
+      213: -8330686441142093041
+    second: MegaCow_13
+  - first:
+      213: -2856325135565410657
+    second: MegaCow_14
+  - first:
+      213: -3638596511933859767
+    second: MegaCow_15
+  - first:
+      213: -3719662669391262541
+    second: MegaCow_16
+  - first:
+      213: -8363517166489958928
+    second: MegaCow_17
+  - first:
+      213: -876436586625067520
+    second: MegaCow_18
+  - first:
+      213: -1714092307227775023
+    second: MegaCow_19
+  - first:
+      213: 346304392007266868
+    second: MegaCow_20
+  - first:
+      213: -1837613903479455545
+    second: MegaCow_21
+  - first:
+      213: 7201428982018923320
+    second: MegaCow_22
+  - first:
+      213: 4759501277726763859
+    second: MegaCow_23
+  - first:
+      213: 8210242439435809665
+    second: MegaCow_24
+  - first:
+      213: -1195241027067904530
+    second: MegaCow_25
+  - first:
+      213: -7200597035850641285
+    second: MegaCow_26
+  - first:
+      213: 8122087739481359293
+    second: MegaCow_27
+  - first:
+      213: 8803105881923350583
+    second: MegaCow_28
+  - first:
+      213: -4374348064124651916
+    second: MegaCow_29
+  - first:
+      213: -8448344189944362430
+    second: MegaCow_30
+  - first:
+      213: 728622385033944801
+    second: MegaCow_31
+  - first:
+      213: 800709543770784115
+    second: MegaCow_32
+  - first:
+      213: -4775661338599087352
+    second: MegaCow_33
+  - first:
+      213: 8810148070300209896
+    second: MegaCow_34
+  - first:
+      213: 367744849840679262
+    second: MegaCow_35
+  - first:
+      213: 3598344863302034241
+    second: MegaCow_36
+  - first:
+      213: -8838343346948174388
+    second: MegaCow_37
+  - first:
+      213: 2430445371870252147
+    second: MegaCow_38
+  - first:
+      213: -2542123411309782715
+    second: MegaCow_39
+  - first:
+      213: -4024070256542804120
+    second: MegaCow_40
+  - first:
+      213: -3151353651830506483
+    second: MegaCow_41
+  - first:
+      213: -8827597846263550433
+    second: MegaCow_42
+  - first:
+      213: -4230900808684449775
+    second: MegaCow_43
+  - first:
+      213: 8766306737667365829
+    second: MegaCow_44
+  - first:
+      213: 711704092782803074
+    second: MegaCow_45
+  - first:
+      213: -572135960167927589
+    second: MegaCow_46
+  - first:
+      213: 4893773822437807297
+    second: MegaCow_47
+  - first:
+      213: 2115604116160640415
+    second: MegaCow_48
+  - first:
+      213: -9140376176481651392
+    second: MegaCow_49
+  - first:
+      213: 6235996392491771613
+    second: MegaCow_50
+  - first:
+      213: 8026275430980558431
+    second: MegaCow_51
+  - first:
+      213: -5414215757944743049
+    second: MegaCow_52
+  - first:
+      213: -2576777655732974969
+    second: MegaCow_53
+  - first:
+      213: -151931942856722082
+    second: MegaCow_54
+  - first:
+      213: -6048101173657366467
+    second: MegaCow_55
+  - first:
+      213: 5160711175275632781
+    second: MegaCow_56
+  - first:
+      213: -8977385498613362568
+    second: MegaCow_57
+  - first:
+      213: 2053334709184095275
+    second: MegaCow_58
+  - first:
+      213: 7533806277860854476
+    second: MegaCow_59
+  - first:
+      213: 5316739341702511576
+    second: MegaCow_60
+  - first:
+      213: -5998752266433544934
+    second: MegaCow_61
+  - first:
+      213: 4583930348510898509
+    second: MegaCow_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MegaCow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40e5bca0e1b04e20800000000000000
+      internalID: 3332859302782558285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCow_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8376af5d202f4aa30800000000000000
+      internalID: 4225768444374181688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCow_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5a53c7daf894660800000000000000
+      internalID: 7370580240444532148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCow_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4719732558b22e1a0800000000000000
+      internalID: -6781810237256527500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCow_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b99b1e368ed3710800000000000000
+      internalID: 1674750152138136365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCow_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bd1b28505931c70800000000000000
+      internalID: 8940653536160635708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MegaCow_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e3777688feb6320800000000000000
+      internalID: 2552396982965976612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
