@@ -17,6 +17,10 @@ public class Cow : MonoBehaviour
 
     [SerializeField] GameObject deathVFX;
 
+    public TMPro.TMP_Text pooCounter;
+    [SerializeField] public Image barEmpty,
+                barFull;
+
     float lastTime = 0f;
     public bool isSuperFat = false;
 
