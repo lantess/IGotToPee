@@ -269,13 +269,25 @@ PrefabInstance:
     - target: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
         type: 3}
       propertyPath: poopShotLimit
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
         type: 3}
       propertyPath: poopShotEquippedAmount
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
+        type: 3}
+      propertyPath: poopShot
+      value: 
+      objectReference: {fileID: 221036383992851752, guid: d11c6087ce3863149a6c4ce9b57e74b7,
+        type: 3}
+    - target: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
+        type: 3}
+      propertyPath: deathVFX
+      value: 
+      objectReference: {fileID: 6348770088035908620, guid: 03fe55e4b3d59c448a117e633895cb16,
+        type: 3}
     - target: {fileID: 995404571242948133, guid: 2b95cc5e0201b8642a7a8f998c1cc119,
         type: 3}
       propertyPath: m_Name
