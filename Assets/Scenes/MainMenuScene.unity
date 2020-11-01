@@ -146,7 +146,7 @@ RectTransform:
   m_GameObject: {fileID: 220817075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.236, y: 2.236, z: 2.236}
   m_Children:
   - {fileID: 573913982}
   - {fileID: 843227171}
@@ -322,7 +322,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 508035338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2136620840}
+        m_MethodName: Controls
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &508035338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,7 +451,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 573913984}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2136620840}
+        m_MethodName: Credits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &573913984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,3 +905,84 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2125330667}
   buttony: {fileID: 220817075}
+--- !u!1001 &2136620839
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1287.6119
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 406.51157
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -396.98517
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321937, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3003799179572321939, guid: 8693bd7917ed0344682eb5c1e8c820de,
+        type: 3}
+      propertyPath: m_Name
+      value: MenuButtonsController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8693bd7917ed0344682eb5c1e8c820de, type: 3}
+--- !u!114 &2136620840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3003799179572321936, guid: 8693bd7917ed0344682eb5c1e8c820de,
+    type: 3}
+  m_PrefabInstance: {fileID: 2136620839}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cbdb38ba812e24eb94beebc1dad743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
