@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4229d69cab3b5747bc667cd18aeeb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgPrefab: {fileID: 1768661766424896231, guid: 51340128a4892ae42826db6153025428,
+  bgPrefab: {fileID: 7660600546124177358, guid: 51340128a4892ae42826db6153025428,
     type: 3}
   velocity: 1.5
