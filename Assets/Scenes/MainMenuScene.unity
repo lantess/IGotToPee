@@ -294,7 +294,6 @@ GameObject:
   - component: {fileID: 508035339}
   - component: {fileID: 508035338}
   - component: {fileID: 508035337}
-  - component: {fileID: 508035340}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -364,18 +363,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 508035338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 508035340}
-        m_MethodName: Controls
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &508035338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,18 +401,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508035335}
   m_CullTransparentMesh: 0
---- !u!114 &508035340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508035335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7cbdb38ba812e24eb94beebc1dad743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &573913981
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +413,6 @@ GameObject:
   - component: {fileID: 573913985}
   - component: {fileID: 573913984}
   - component: {fileID: 573913983}
-  - component: {fileID: 573913986}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -507,18 +482,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 573913984}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 573913986}
-        m_MethodName: Credits
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &573913984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,18 +520,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573913981}
   m_CullTransparentMesh: 0
---- !u!114 &573913986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573913981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7cbdb38ba812e24eb94beebc1dad743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &843227170
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +532,6 @@ GameObject:
   - component: {fileID: 843227174}
   - component: {fileID: 843227173}
   - component: {fileID: 843227172}
-  - component: {fileID: 843227175}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -650,18 +601,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 843227173}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 843227175}
-        m_MethodName: NewGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &843227173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,18 +639,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843227170}
   m_CullTransparentMesh: 0
---- !u!114 &843227175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843227170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7cbdb38ba812e24eb94beebc1dad743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1177511919
 GameObject:
   m_ObjectHideFlags: 0
