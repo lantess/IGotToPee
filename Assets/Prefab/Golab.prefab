@@ -146,7 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 6348770088035908620, guid: 03fe55e4b3d59c448a117e633895cb16,
     type: 3}
-  _xSpeed: 2
+  cow: {fileID: 0}
+  Speed: 1
+  _xSpeed: 3
 --- !u!95 &7388337153466760680
 Animator:
   serializedVersion: 3

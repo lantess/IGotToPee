@@ -5,8 +5,20 @@ using UnityEngine.PlayerLoop;
 
 public class BudynekEnemy : iEnemy
 {
-    public float _xSpeed = 1.5f;
-
+    public float _xSpeed = 3.0f;
+    public Sprite[] sprites;
+    private int no;
+    public void Start()
+    {
+        no = UnityEngine.Random.Range(0, sprites.Length);
+        GetComponent<SpriteRenderer>().sprite = sprites[no];
+        if (no == 0)
+        {
+            Vector3 v = transform.position;
+            v.y -= 1.0f;
+            transform.position = v;
+        }
+    }
 
     public override void Move()
     {
@@ -17,7 +29,7 @@ public class BudynekEnemy : iEnemy
 
     public override Vector4 getSpawnArea()
     {
-        return new Vector4(-3.5f, -3.5f, 0.0f, 0.0f);
+        return new Vector4(-2.5f, -2.5f, 0.0f, 0.0f);
     }
 
     public new void OnCollisionEnter2D(Collision2D collision)

@@ -144,6 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9724832e2c22849459212438596428a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathVFX: {fileID: 6348770088035908620, guid: 03fe55e4b3d59c448a117e633895cb16,
+    type: 3}
 --- !u!95 &4302692767999048506
 Animator:
   serializedVersion: 3

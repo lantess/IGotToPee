@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GolabEnemy : iEnemy
 {
-    public float _xSpeed = 2.0f;
+    public float _xSpeed = 3.0f;
 
     public override void Move()
     {
