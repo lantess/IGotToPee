@@ -145,7 +145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f460d68bd171547af1c57c17076b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 0}
+  deathVFX: {fileID: 6348770088035908620, guid: 03fe55e4b3d59c448a117e633895cb16,
+    type: 3}
+  cow: {fileID: 0}
+  Speed: 1
   forkPrefab: {fileID: 1099396786246485373, guid: 46e868ea079151741b097755958d5496,
     type: 3}
   hitpoint: 3

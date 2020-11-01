@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DronEnemy : iEnemy
 {
-    public float _xSpeed = 2.0f;
+    public float _xSpeed = 3.0f;
     public float _ySpeed = 1.0f;
-    public float _yChangeSpeed = 1.0f;
+    public float _yChangeSpeed = 1.5f;
     public float _cos = 0.0f;
     public override void Move()
     {

@@ -144,9 +144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 0}
-  cow: {fileID: 995404571242948132, guid: 2b95cc5e0201b8642a7a8f998c1cc119, type: 3}
+  cow: {fileID: 0}
   Speed: 1
-  _xSpeed: 0.75
+  _xSpeed: 3
   sprites:
   - {fileID: 21300000, guid: d5c43b7fc3d4bff45852256c8a9d2c6c, type: 3}
   - {fileID: 21300000, guid: 4870cd5b18907cd4ea4f241de8e90e84, type: 3}

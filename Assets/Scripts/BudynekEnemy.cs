@@ -5,13 +5,19 @@ using UnityEngine.PlayerLoop;
 
 public class BudynekEnemy : iEnemy
 {
-    public float _xSpeed = 1.5f;
+    public float _xSpeed = 3.0f;
     public Sprite[] sprites;
+    private int no;
     public void Start()
     {
-        int no = UnityEngine.Random.Range(0, sprites.Length);
+        no = UnityEngine.Random.Range(0, sprites.Length);
         GetComponent<SpriteRenderer>().sprite = sprites[no];
-        Debug.Log("Drzewo: " + transform.localScale.y);
+        if (no == 0)
+        {
+            Vector3 v = transform.position;
+            v.y -= 1.0f;
+            transform.position = v;
+        }
     }
 
     public override void Move()
