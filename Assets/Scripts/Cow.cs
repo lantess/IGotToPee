@@ -20,7 +20,9 @@ public class Cow : MonoBehaviour
     float lastTime = 0f;
     public bool isSuperFat = false;
 
-    public Sprite[] spriteArray;
+    float lastTimeInfinitePoop = 0f;
+    public bool hasInfinitePoop = false;
+
     public SpriteRenderer spriteRenderer;
 
     public float Speed = 1;
@@ -62,6 +64,7 @@ public class Cow : MonoBehaviour
 
         fire();
         makeSuperCow();
+        makeInfinitePoop();
         LimitByCamera();
 
         if (Input.GetKeyUp(KeyCode.W))
@@ -79,17 +82,30 @@ public class Cow : MonoBehaviour
             if (lastTime <= 5)
             {
                 lastTime += Time.deltaTime;
-                spriteRenderer.sprite = spriteArray[1];
                 rend.material.SetColor("_Color", HSBColor.ToColor(new HSBColor(Mathf.PingPong(Time.time * Speed, 1), 1, 1)));
-
             }
             else
             {
                 isSuperFat = false;
                 animator.SetBool("isFat", false);
-                spriteRenderer.sprite = spriteArray[0];
                 rend.material.SetColor("_Color", Color.white);
+                lastTime = 0.0f;
+            }
+        }
+    }
 
+    private void makeInfinitePoop()
+    {
+        if (hasInfinitePoop)
+        {
+            if (lastTimeInfinitePoop <= 5)
+            {
+                lastTimeInfinitePoop += Time.deltaTime;
+                poopShotEquippedAmount = poopShotLimit;
+            }
+            else
+            {
+                hasInfinitePoop = false;
             }
         }
     }
@@ -135,7 +151,6 @@ public class Cow : MonoBehaviour
             Destroy(gameObject);
             GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
             Destroy(explosion, 1f);
-            Time.timeScale = 0.1f;
             SceneManager.LoadScene("GameOverScene");
         }
 
@@ -156,6 +171,12 @@ public class Cow : MonoBehaviour
                 milkAmount = 2;
             }
         }
+    }
+
+
+    public bool getIsSuperFat()
+    {
+        return isSuperFat;
     }
 
 }
